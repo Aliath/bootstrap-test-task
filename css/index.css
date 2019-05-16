@@ -37,6 +37,7 @@ body {
 
 .form__select {
   height: 50px !important;
+  -webkit-appearance:none;
 }
 
 .form__select--init {
