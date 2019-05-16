@@ -94,6 +94,10 @@ body {
   font-size: 10pt;
 }
 
+.slider-container p {
+  margin-top: 4px;
+}
+
 .carousel-indicators--fixed {
   justify-content: flex-end;
   margin-right: 0;
