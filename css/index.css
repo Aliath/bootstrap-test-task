@@ -42,6 +42,13 @@ body {
   appearance: none;
 }
 
+.form__select__caret {
+  position: absolute;
+  right: 20px;
+  color: #888;
+  bottom: 12px;
+}
+
 .form__select--init {
   color: #777;
 }
