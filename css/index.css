@@ -1,0 +1,109 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.article {
+  margin-top: 65px;
+}
+
+.title {
+  font-size: 24pt;
+  font-weight: 200;
+}
+
+.title--inner {
+  font-size: 16pt;
+  font-weight: 800;
+}
+
+.title b {
+  font-weight: 800;
+}
+
+.form__input {
+  font-size: 10pt;
+  border-radius: 2px;
+  height: 50px;
+  padding: 0 25px;
+  position: relative;
+  padding-right: 75px;
+}
+
+.form__select {
+  height: 50px !important;
+}
+
+.form__select--init {
+  color: #777;
+}
+
+.form__input--verified::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form__input:focus {
+  box-shadow: none;
+  border-color: #00c352;
+}
+
+.form__button {
+  width: 100%;
+  border-radius: 2px;
+  font-size: 10pt;
+  color: #fff;
+  height: 50px;
+  background-color: #00c352;
+}
+
+.verify-status {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    right: 35px;
+    margin-top: 0;
+    color: #00c352;
+}
+
+.form-group--verified .verify-status {
+  display: block;
+}
+
+.carousel-indicators--fixed {
+  top: -30px;
+  right: 0;
+}
+
+.slider-container {
+  margin-top: 15px;
+  font-size: 10pt;
+}
+
+.carousel-indicators--fixed {
+  justify-content: flex-end;
+  margin-right: 0;
+}
+
+.carousel-indicators--fixed li {
+  background-color: #ddd;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+}
+
+.carousel-indicators--fixed li.active {
+  background-color: #00c352;
+  width: 16px;
+}

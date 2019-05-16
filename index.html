@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Zadanie testowe</title>
+  </head>
+  <body>
+    <main class="main">
+      <p class="title"><b>Zadanie</b> testowe</p>
+
+      <arcicle class="article">
+        <p class="title title--inner">1. Zakoduj formularz</p>
+
+        <form class="form">
+          <div id="balert" class="alert alert-danger" role="alert"></div>
+          <div id="galert" class="alert alert-success" role="alert"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-group position-relative has-feedback">
+                  <input name="name" id="form-name" class="form-control form__input" type="text" placeholder="Podaj imię"/>
+                  <div class="verify-status"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="form-group position-relative has-feedback">
+                  <input name="surname" id="form-surname" class="form-control form__input" type="text" placeholder="Podaj nazwisko"/>
+                  <div class="verify-status"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="form-group position-relative has-feedback">
+                  <select name="age" id="form-age" class="form-control form__input form__select form__select--init">
+                    <option value="" disabled selected>Ile masz lat?</option>
+                  </select>
+                  <div class="verify-status"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-group position-relative has-feedback">
+                  <input name="address" id="form-address" class="form-control form__input" type="text" placeholder="Gdzie mieszkasz?"/>
+                  <div class="verify-status"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="form-group position-relative has-feedback">
+                  <input name="mail" id="form-mail" class="form-control form__input" type="text" placeholder="Podaj swój e-mail"/>
+                  <div class="verify-status"><i class="fas fa-check-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <button id="submit" type="button" class="btn form__button">WYŚLIJ FORMULARZ</button>
+          </div>
+        </form>
+      </arcicle>
+
+      <article class="article">
+        <p class="title title--inner">2. Zakoduj slajder</p>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators carousel-indicators--fixed">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-1.png" alt="First slide">
+                    <div class="slider-container">
+                      <b>Slajder #1</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-2.png" alt="Second slide">
+                    <div class="slider-container">
+                      <b>Slajder #2</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-3.png" alt="Third slide">
+                    <div class="slider-container">
+                      <b>Slajder #3</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-1.png" alt="First slide">
+                    <div class="slider-container">
+                      <b>Slajder #1</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-2.png" alt="Second slide">
+                    <div class="slider-container">
+                      <b>Slajder #2</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-3.png" alt="Third slide">
+                    <div class="slider-container">
+                      <b>Slajder #3</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-1.png" alt="First slide">
+                    <div class="slider-container">
+                      <b>Slajder #1</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-2.png" alt="Second slide">
+                    <div class="slider-container">
+                      <b>Slajder #2</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-3.png" alt="Third slide">
+                    <div class="slider-container">
+                      <b>Slajder #3</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-1.png" alt="First slide">
+                    <div class="slider-container">
+                      <b>Slajder #1</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-2.png" alt="Second slide">
+                    <div class="slider-container">
+                      <b>Slajder #2</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <img class="d-block w-100" src="./img/slider-3.png" alt="Third slide">
+                    <div class="slider-container">
+                      <b>Slajder #3</b>
+                      <p>lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="article">
+        <p class="title"><b>Koniec</b> zadania ;)</p>
+      </article>
+    </main>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+
+  </body>
+</html>
