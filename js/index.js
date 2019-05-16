@@ -5,11 +5,11 @@ function validateEmail(email) {
 
 const verifyState = { name: false, surname: false, age: false, address: false, mail: false };
 const verificators = {
-  name: e => e.length > 0,
-  surname: e => e.length > 0,
+  name: e => e.length >= 3 && e.length < 256,
+  surname: e => e.length >= 3 && e.length < 256,
   age: e => e >= 12 && e <= 100,
-  address: e => e.length > 0,
-  mail: e => validateEmail,
+  address: e => e.length >= 3 && e.length < 256,
+  mail: validateEmail,
 };
 
 for (let age = 12; age < 100; age ++) {
