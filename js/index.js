@@ -1,5 +1,3 @@
-$('#balert, #galert').hide();
-
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
@@ -11,7 +9,7 @@ const verificators = {
   surname: e => e.length > 0,
   age: e => e >= 12 && e <= 100,
   address: e => e.length > 0,
-  mail: e => validateEmail(e),
+  mail: e => validateEmail,
 };
 
 for (let age = 12; age < 100; age ++) {
