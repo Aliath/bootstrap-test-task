@@ -81,10 +81,11 @@ body {
 .verify-status {
     display: none;
     position: absolute;
-    bottom: 12px;
+    bottom: 14px;
     right: 35px;
     margin-top: 0;
     color: #00c352;
+    font-size: 14px;
 }
 
 .form-group--verified .verify-status {
