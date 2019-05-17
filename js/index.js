@@ -39,7 +39,8 @@ Object.entries(verifyState).forEach(e => {
 });
 
 
-$('#submit').on('click', function() {
+$('#submit').on('click', function(event) {
+  event.preventDefault();
   if (Object.values(verifyState).filter(e => !e).length !== 0) return $('#balert').show().text('Nie uzupełniłeś poprawnie wszystkich pól!');
 
   fetch('./sendmail.php?' + $('form').serialize()).then(() => {
