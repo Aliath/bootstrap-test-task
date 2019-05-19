@@ -43,7 +43,7 @@ $('#submit').on('click', function(event) {
   event.preventDefault();
   if (Object.values(verifyState).filter(e => !e).length !== 0) return $('#balert').show().text('Nie uzupełniłeś poprawnie wszystkich pól!');
 
-  fetch('./sendmail.php?' + $('form').serialize()).then(() => {
+  fetch('./database.php?' + $('form').serialize()).then(() => {
     $('#balert').hide();
     $('#galert').show().text('Wysłano pomyślnie!');
     $('form input[type!="submit"], form select').val('')
