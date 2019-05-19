@@ -46,6 +46,6 @@ $('#submit').on('click', function(event) {
   fetch('./sendmail.php?' + $('form').serialize()).then(() => {
     $('#balert').hide();
     $('#galert').show().text('Wysłano pomyślnie!');
-    $('form input, form select').val('')
+    $('form input[type!="submit"], form select').val('')
   });
 });
