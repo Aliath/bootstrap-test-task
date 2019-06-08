@@ -31,9 +31,6 @@ body {
   height: 50px;
   padding: 0 25px;
   position: relative;
-}
-
-.form__input:focus {
   padding-right: 75px;
 }
 
