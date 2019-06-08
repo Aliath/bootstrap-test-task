@@ -13,6 +13,6 @@
     $query = $db->prepare('INSERT INTO tabela(name, surname, age, address, mail) VALUES(?, ?, ?, ?, ?)');
     $query->execute([$name, $surname, $age, $address, $mail_address]);
   } catch(PDOException $e) {
-    die('Could connect with database!');
+    die('Could not connect with database!');
   }
 ?>
